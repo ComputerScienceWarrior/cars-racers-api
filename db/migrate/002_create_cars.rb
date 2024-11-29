@@ -10,6 +10,7 @@ class CreateCars < ActiveRecord::Migration[7.1]
       t.integer :losses
       t.integer :tournament_wins
       t.integer :tournament_lossses
+      t.integer :championship_game_matches
       t.integer :championship_wins
 
       t.references :user, null: false, foreign_key: true
